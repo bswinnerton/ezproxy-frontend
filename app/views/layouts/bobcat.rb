@@ -2,6 +2,10 @@
 module Views
   module Layouts
     class Bobcat < ActionView::Mustache
+      def title
+        "EZProxy Configuration"
+      end
+
       def login
         nil
       end
@@ -11,7 +15,7 @@ module Views
       end
 
       def sidebar
-        render :partial => "shared/sidebar"
+        render :partial => 'shared/sidebar'
       end
 
       def breadcrumbs
