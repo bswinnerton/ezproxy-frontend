@@ -1,4 +1,8 @@
 Ezproxy::Application.routes.draw do
+  root :to => "resources#index"
+  resources :resources
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
