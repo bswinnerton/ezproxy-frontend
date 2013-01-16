@@ -21,7 +21,7 @@ module Views
       def breadcrumbs
         breadcrumbs = []
         breadcrumbs.pop
-        breadcrumbs << link_to('EZProxy', root_url)
+        breadcrumbs << link_to('EZProxy Home', root_url)
         return breadcrumbs
       end
 
