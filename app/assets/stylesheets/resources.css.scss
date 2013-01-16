@@ -1,3 +1,15 @@
 // Place all the styles related to the Resources controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+table tr, table th {
+  border: 1px solid #CCC;
+}
+
+.field input {
+  margin-left: 20px;
+}
+
+#config_preview {
+  margin-bottom: 0px;
+}

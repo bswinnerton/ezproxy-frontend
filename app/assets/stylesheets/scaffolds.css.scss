@@ -19,7 +19,8 @@ pre {
   font-size: 11px;
 }
 
-a {
+/* Removed by Brooks */
+/*a {
   color: #000;
   &:visited {
     color: #666;
@@ -28,7 +29,7 @@ a {
     color: #fff;
     background-color: #000;
   }
-}
+}*/
 
 div {
   &.field, &.actions {
@@ -67,8 +68,4 @@ div {
     font-size: 12px;
     list-style: square;
   }
-}
-
-table tr, table th {
-  border: 1px solid #CCC;
 }

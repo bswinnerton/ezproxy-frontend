@@ -1,25 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
+<p id="config_preview">
+  <b>Title</b>
   <%= @resource.title %>
 </p>
 
-<p>
-  <b>Host:</b>
+<p id="config_preview">
+  <b>Host</b>
   <%= @resource.host %>
 </p>
 
-<p>
-  <b>Url:</b>
+<p id="config_preview">
+  <b>URL</b>
   <%= @resource.url %>
 </p>
 
-<p>
-  <b>Domain:</b>
+<p id="config_preview">
+  <b>Domain</b>
   <%= @resource.domain %>
 </p>
 
+<br />
 
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
 <%= link_to 'Back', resources_path %>
