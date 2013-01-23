@@ -11,15 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130116161814) do
+ActiveRecord::Schema.define(:version => 20130123155045) do
 
   create_table "resources", :force => true do |t|
     t.string   "title"
     t.string   "host"
     t.string   "url"
     t.string   "domain"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.boolean  "is_deleted", :default => false
   end
 
 end

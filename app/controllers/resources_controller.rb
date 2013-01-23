@@ -59,12 +59,21 @@ class ResourcesController < ApplicationController
   end
 
   def destroy
-    @resource = Resource.find(params[:id])
-    @resource.destroy
+    @resource = Resource.update(params[:id], :is_deleted => true)
 
     respond_to do |format|
       format.html { redirect_to resources_url }
       format.json { head :no_content }
     end
   end
+
+  def undestroy
+    @resource = Resource.unscoped.update(params[:id], :is_deleted => false)
+
+    respond_to do |format|
+      format.html { redirect_to resources_url }
+      format.json { head :no_content }
+    end
+  end
+
 end
