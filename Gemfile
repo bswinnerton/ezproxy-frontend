@@ -28,6 +28,7 @@ group :assets do
 
   gem 'compass-rails', '~> 1.0.3'
   gem 'nyulibraries_assets', :git => 'git://github.com/NYULibraries/nyulibraries_assets.git'
+  gem 'mustache-rails', :require => 'mustache/railtie'
 end
 
 gem 'jquery-rails'

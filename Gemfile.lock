@@ -86,6 +86,10 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.5.0)
+    mustache (0.99.4)
+    mustache-rails (0.2.3)
+      actionpack (>= 3.1)
+      mustache (~> 0.99.4)
     mysql2 (0.3.11)
     polyglot (0.3.3)
     rack (1.4.4)
@@ -144,6 +148,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   compass-rails (~> 1.0.3)
   jquery-rails
+  mustache-rails
   mysql2
   nyulibraries_assets!
   rails (= 3.2.11)
