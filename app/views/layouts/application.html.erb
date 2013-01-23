@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Ezproxy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <title>EZProxy Configuration</title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <header id="header" class="header">
+    <div class="parent"><span><%= link_to "NYU Libraries", "http://library.nyu.edu" %></span></div>
+    <div class="suite"><span>BobCat</span></div>
+    <div class="application"><span>BobCat</span></div>
+  </header>
+  <nav id="nav1" class="breadcrumb">
+    <ul class="nyu-breadcrumbs">
+      <li><%= link_to "EZProxy Home", root_path %></li>
+    </ul>
+    <ul class="nyu-login">
+      <li></li>
+    </ul>
+  </nav>
+  <div class="nyu-container">
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span8">
+          <%= yield %>
+        </div>
+        <div class="span4">
+          <div id="sidebar" class="sidebar">
+            <div id="options" class="sidebar-section">
+              <h2>Options</h2>
+              <ul>
+                <li><%= link_to "New Database Resource", new_resource_path %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
