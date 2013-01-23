@@ -7,6 +7,8 @@ gem 'rails', '3.2.11'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller' # dependency of better_errors
 end
 
 group :production do
@@ -27,8 +29,6 @@ group :assets do
   gem 'compass-rails', '~> 1.0.3'
   gem 'nyulibraries_assets', :git => 'git://github.com/NYULibraries/nyulibraries_assets.git'
 end
-
-gem 'mustache-rails', :require => 'mustache/railtie'
 
 gem 'jquery-rails'
 
