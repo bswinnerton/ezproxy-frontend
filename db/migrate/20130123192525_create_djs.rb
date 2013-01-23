@@ -6,5 +6,6 @@ class CreateDjs < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :djs, :resource_id
   end
 end
