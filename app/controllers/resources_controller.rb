@@ -1,6 +1,6 @@
 class ResourcesController < ApplicationController
   def index
-    @resources = Resource.includes(:dj, :hj, :option).all
+    @resources = Resource.all
 
     respond_to do |format|
       format.html
