@@ -1,9 +1,10 @@
 @import "nyulibraries";
+
 body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 18px;
 }
 
@@ -19,8 +20,9 @@ pre {
   font-size: 11px;
 }
 
-/* Removed by Brooks */
-/*a {
+/*  Removed by Brooks
+
+a {
   color: #000;
   &:visited {
     color: #666;
@@ -29,7 +31,9 @@ pre {
     color: #fff;
     background-color: #000;
   }
-}*/
+}
+
+*/
 
 div {
   &.field, &.actions {
