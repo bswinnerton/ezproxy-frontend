@@ -27,6 +27,14 @@
     <%= f.label :domain %>
     <%= f.text_field :domain %>
   </div>
+
+  <%= f.fields_for :optionals do |optional| %>
+    <div class="field">
+      <%= optional.label :value %>
+      <%= optional.text_field :value %>
+    </div>
+  <% end %>
+
   <div class="actions">
     <%= f.submit :class => "btn" %>
   </div>

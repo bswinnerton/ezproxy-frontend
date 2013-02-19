@@ -5,6 +5,7 @@ class CreateResources < ActiveRecord::Migration
       t.string :host
       t.string :url
       t.string :domain
+      t.string :optionals_id
 
       t.timestamps
     end
