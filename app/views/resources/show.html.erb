@@ -20,6 +20,15 @@
   <%= @resource.domain %>
 </p>
 
+<p id="config_preview">
+  <b>Optionals</b>
+</p>
+<p>
+  <% @resource.optionals.each do |o| %>
+  <%= o.value %>
+  <% end %>
+</p>
+
 <br />
 
 <%= link_to 'Edit', edit_resource_path(@resource) %> |
