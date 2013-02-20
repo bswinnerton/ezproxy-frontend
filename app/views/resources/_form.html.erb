@@ -31,7 +31,8 @@
   <%= f.fields_for :optionals do |optional| %>
     <div class="field">
       <%= optional.label :optionals %>
-      <%= optional.text_area(:value, :size => "4x4") %>
+      <%= optional.text_field :name, :id => "optional_name" %>
+      <%= optional.text_field :value, :id => "optional_value" %>
     </div>
   <% end %>
 

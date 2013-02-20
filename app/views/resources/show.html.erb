@@ -1,31 +1,28 @@
 <p id="notice"><%= notice %></p>
 
 <p id="config_preview">
-  <b>Title</b>
+  <b>Title</b>&nbsp;&nbsp;&nbsp;&nbsp;
   <%= @resource.title %>
 </p>
 
 <p id="config_preview">
-  <b>Host</b>
+  <b>Host</b>&nbsp;&nbsp;&nbsp;&nbsp;
   <%= @resource.host %>
 </p>
 
 <p id="config_preview">
-  <b>URL</b>
+  <b>URL</b>&nbsp;&nbsp;&nbsp;&nbsp;
   <%= @resource.url %>
 </p>
 
 <p id="config_preview">
-  <b>Domain</b>
+  <b>Domain</b>&nbsp;&nbsp;&nbsp;&nbsp;
   <%= @resource.domain %>
 </p>
 
 <p id="config_preview">
-  <b>Optionals</b>
-</p>
-<p>
   <% @resource.optionals.each do |o| %>
-  <%= o.value %>
+  <b><%= o.name %></b>&nbsp;&nbsp;&nbsp;&nbsp;<%= o.value %>
   <% end %>
 </p>
 
