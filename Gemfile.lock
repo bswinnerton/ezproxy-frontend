@@ -47,6 +47,7 @@ GEM
       sass (~> 3.2)
     builder (3.0.4)
     chunky_png (1.2.7)
+    cocoon (1.1.2)
     coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -145,6 +146,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  cocoon
   coffee-rails (~> 3.2.1)
   compass-rails (~> 1.0.3)
   jquery-rails
