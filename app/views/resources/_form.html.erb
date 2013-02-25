@@ -1,4 +1,4 @@
-<%= form_for(@resource, :html => { :class => "form-horizontal"} ) do |f| %>
+<%= form_for @resource, :html => { :class => "form-horizontal"} do |f| %>
   <% if @resource.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@resource.errors.count, "error") %> prohibited this resource from being saved:</h2>
@@ -9,34 +9,31 @@
       <% end %>
       </ul>
     </div>
-  <% end %>
+    <% end %>
 
-  <div class="field">
-    <%= f.label :title %>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :host %>
-    <%= f.text_field :host %>
-  </div>
-  <div class="field">
-    <%= f.label :url, "URL" %>
-    <%= f.text_field :url %>
-  </div>
-  <div class="field">
-    <%= f.label :domain %>
-    <%= f.text_field :domain %>
-  </div>
-
-  <%= f.fields_for :optionals do |optional| %>
     <div class="field">
-      <%= optional.label :optionals %>
-      <%= optional.text_field :name, :id => "optional_name" %>
-      <%= optional.text_field :value, :id => "optional_value" %> <a class="btn btn-mini" href="#"><i class="icon-plus-sign"></i></a>
+        <%= f.label :title %>
+        <%= f.text_field :title %>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit :class => "btn" %>
-  </div>
+    <div class="field">
+        <%= f.label :host %>
+        <%= f.text_field :host %>
+    </div>
+    <div class="field">
+        <%= f.label "URL" %>
+        <%= f.text_field :url %>
+    </div>
+    <div class="field">
+        <%= f.label :domain %>
+        <%= f.text_field :domain %>
+    </div>
+    <h3>Optionals</h3>
+    <%= f.fields_for :optionals do |optional| %>
+        <%= render 'optional_fields', :f => optional %>
+        <%= link_to_add_association '<i class="icon-plus-sign"></i>'.html_safe, f, :optionals, :force_non_association_create => true %>
+        </div></div>
+    <% end %>
+    <div class="actions">
+      <%= f.submit :class => "btn" %>
+    </div>
 <% end %>

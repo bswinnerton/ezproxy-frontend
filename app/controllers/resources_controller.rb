@@ -19,6 +19,7 @@ class ResourcesController < ApplicationController
 
   def new
     @resource = Resource.new
+    @resource.optionals.build
 
     respond_to do |format|
       format.html
@@ -28,6 +29,7 @@ class ResourcesController < ApplicationController
 
   def edit
     @resource = Resource.find(params[:id])
+    @resource.optionals.build
   end
 
   def create
