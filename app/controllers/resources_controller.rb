@@ -1,7 +1,7 @@
 class ResourcesController < ApplicationController
   def index
     @resources = Resource.all
-
+    
     respond_to do |format|
       format.html
       format.json { render json: @resources }
@@ -13,6 +13,15 @@ class ResourcesController < ApplicationController
 
     respond_to do |format|
       format.html
+      format.json { render json: @resource }
+    end
+  end
+
+  def byletter
+    @resources = Resource.all(:conditions => "domain like '#{params[:id]}%'")
+
+    respond_to do |format|
+      format.html { render :index }
       format.json { render json: @resource }
     end
   end
