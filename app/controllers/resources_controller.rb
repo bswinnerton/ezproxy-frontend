@@ -5,6 +5,7 @@ class ResourcesController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @resources }
+      format.text
     end
   end
 
@@ -23,6 +24,7 @@ class ResourcesController < ApplicationController
     respond_to do |format|
       format.html { render :index }
       format.json { render json: @resource }
+      format.text { render :index }
     end
   end
 
