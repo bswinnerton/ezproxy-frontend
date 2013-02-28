@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <pre>
-<b>Title</b><%= determine_num_of_spaces("Title") %><%= @resource.title %>
-<b>Host</b><%= determine_num_of_spaces("Host") %><%= @resource.host %>
-<b>URL</b><%= determine_num_of_spaces("URL") %><%= @resource.url %>
-<b>Domain</b><%= determine_num_of_spaces("Domain") %><%= @resource.domain %> 
+<b>Title</b><%= determine_num_of_spaces("Title", :html) %><%= @resource.title %>
+<b>Host</b><%= determine_num_of_spaces("Host", :html) %><%= @resource.host %>
+<b>URL</b><%= determine_num_of_spaces("URL", :html) %><%= @resource.url %>
+<b>Domain</b><%= determine_num_of_spaces("Domain", :html) %><%= @resource.domain %> 
 <% @resource.optionals.each do |o| %>
-<b><%= o.name %></b><%= determine_num_of_spaces(o.name) %><%= o.value %>
+<b><%= o.name %></b><%= determine_num_of_spaces(o.name, :html) %><%= o.value %>
 <% end %>
 </pre>
 
