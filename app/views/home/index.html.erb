@@ -1,6 +1,6 @@
 <h1>Welcome to EZproxy</h1>
 <p>Browse by Resource:</p>
-<p>
+<h2>
 <%= link_to "A", resource_path("byletter/A") %>
 <%= link_to "B", resource_path("byletter/B") %>
 <%= link_to "C", resource_path("byletter/C") %>
@@ -27,5 +27,5 @@
 <%= link_to "X", resource_path("byletter/X") %>
 <%= link_to "Y", resource_path("byletter/Y") %>
 <%= link_to "Z", resource_path("byletter/Z") %>
- | All
-</p>
+ | <%= link_to "All", resources_path %>
+</h2>
