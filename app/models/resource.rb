@@ -3,4 +3,5 @@ class Resource < ActiveRecord::Base
   default_scope where(:is_deleted => false)
   has_many :optionals
   accepts_nested_attributes_for :optionals, :reject_if => :all_blank, :allow_destroy => true
+  validates_associated :optionals
 end
