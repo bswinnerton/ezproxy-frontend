@@ -27,8 +27,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 
   gem 'compass-rails', '~> 1.0.3'
-  gem 'nyulibraries_assets', :git => 'git://github.com/NYULibraries/nyulibraries_assets.git'
-  gem 'mustache-rails', :require => 'mustache/railtie'
+  gem 'mustache-rails'
+  gem 'nyulibraries_assets', :git => 'git://github.com/NYULibraries/nyulibraries_assets.git', :tag => 'v1.0.2'
 end
 
 gem 'jquery-rails'
