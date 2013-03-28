@@ -1,7 +1,7 @@
 Web Frontend for EZProxy Configuration
 ========
 
-[![Build Status](http://jenkins1.bobst.nyu.edu:8080/job/ezproxy-frontend/badge/icon)](http://jenkins1.bobst.nyu.edu:8080/job/ezproxy-frontend/)
+[![Build Status](http://jenkins1.bobst.nyu.edu/job/ezproxy-frontend/badge/icon)](http://jenkins1.bobst.nyu.edu:8080/job/ezproxy-frontend/)
 
 This ruby application allows for users to add database entries to [EZProxy][ez] through a web interface, and then through a managed job output to a new configuration.
 
