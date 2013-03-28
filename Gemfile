@@ -12,6 +12,10 @@ group :development, :test do
   gem 'pry'
 end
 
+group :test do
+  gem 'rb-readline'
+end
+
 group :production do
   gem 'mysql2'
 end
