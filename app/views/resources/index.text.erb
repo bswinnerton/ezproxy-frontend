@@ -1,10 +1,10 @@
 <% @resources.each do |resource| %>
-Title<%= determine_num_of_spaces("Title", :text) %><%=resource.title %>
-Host<%= determine_num_of_spaces("Host", :text) %><%=resource.host %>
-URL<%= determine_num_of_spaces("URL", :text) %><%=resource.url %>
-Domain<%= determine_num_of_spaces("Domain", :text) %><%=resource.domain %>
+Title<%= determine_num_of_spaces "Title", :text %><%= resource.title %>
+Host<%= determine_num_of_spaces"Host", :text %><%= resource.host %>
+URL<%= determine_num_of_spaces"URL", :text %><%= resource.url %>
+Domain<%= determine_num_of_spaces"Domain", :text %><%= resource.domain %>
 <% resource.optionals.each do |o| %>
-<%= o.name %><%= determine_num_of_spaces(o.name, :text) %><%= o.value %>
+<%= o.name %><%= determine_num_of_spaces o.name, :text %><%= o.value %>
 <% end %>
 
 <% end %>
