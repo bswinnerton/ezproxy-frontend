@@ -15,6 +15,7 @@ class ResourcesController < ApplicationController
     respond_to do |format|
       format.html
       format.json { render json: @resource }
+      format.text
     end
   end
 
