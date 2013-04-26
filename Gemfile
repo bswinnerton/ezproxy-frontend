@@ -10,6 +10,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller' # dependency of better_errors
   gem 'pry'
+  gem 'rspec-rails'
 end
 
 group :production do
