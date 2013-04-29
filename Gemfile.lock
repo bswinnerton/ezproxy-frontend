@@ -96,7 +96,7 @@ GEM
     mustache-rails (0.2.3)
       actionpack (>= 3.1)
       mustache (~> 0.99.4)
-    mysql2 (0.3.11)
+    mysql (2.9.1)
     polyglot (0.3.3)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
@@ -166,7 +166,7 @@ DEPENDENCIES
   compass-rails (~> 1.0.3)
   jquery-rails
   mustache-rails
-  mysql2
+  mysql
   nyulibraries_assets!
   pry
   rails (= 3.2.13)
