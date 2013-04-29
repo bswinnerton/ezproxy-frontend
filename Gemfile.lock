@@ -125,7 +125,6 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.0.4)
-    rb-readline (0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.4)
@@ -170,7 +169,6 @@ DEPENDENCIES
   nyulibraries_assets!
   pry
   rails (= 3.2.13)
-  rb-readline
   sass-rails (~> 3.2.5)
   sqlite3
   therubyracer

@@ -21,21 +21,15 @@ ActiveRecord::Schema.define(:version => 20130220203930) do
     t.string   "name"
   end
 
-  create_table "options", :force => true do |t|
-    t.integer  "resource_id"
-    t.string   "option"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-  end
-
   create_table "resources", :force => true do |t|
     t.string   "title"
     t.string   "host"
     t.string   "url"
     t.string   "domain"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.boolean  "is_deleted", :default => false
+    t.string   "optionals_id"
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.boolean  "is_deleted",   :default => false
   end
 
 end
